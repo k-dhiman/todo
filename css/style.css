@@ -1,0 +1,123 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-size: 0.62%;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: auto;
+}
+
+.container .heading {
+    font-size: 2.2rem;
+    text-align: left;
+    margin: 0.7em 0;
+}
+
+.desription {
+    font-size: 1.2rem;
+    color: #585858;
+    max-width: 550px;
+    margin-bottom: 20px;
+}
+
+.container  #todo-form {
+    margin: 0;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.container  #todo-form input[type="text"] {
+    padding: 10px 15px;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid #585858;
+    margin-bottom: 20px;
+}
+
+.container  #todo-form textarea {
+    padding: 10px 15px;
+    outline: none;
+    resize: none;
+    min-height: 100px;
+    border-radius: 4px;
+    border: 1px solid #585858;
+    margin-bottom: 20px;
+}
+
+.container  #todo-form input[type="submit"] {
+    padding: 10px 15px;
+    outline: none;
+    background-color: #253fb3;
+    color: #fff;
+    border-radius: 4px;
+    border: 1px solid #091c6e;
+    max-width: 120px;
+}
+
+.show-tasks {
+    margin-top: 80px;
+}
+
+
+.show-tasks .task {
+    font-size: 2rem;
+    margin: 0 auto 0.5em;
+    text-transform: capitalize;
+    position: relative;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.show-tasks .task-description {
+    font-size: 1.2rem;
+    margin: 0 auto 0.5em;
+    position: relative;
+    outline: none;
+}
+
+[contenteditable="true"]{
+    border: 1px solid #253fb3;
+}
+
+.task-wrapper {
+    background: #f5f5f5;
+    padding: 15px 20px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.edit-task {
+    outline: none;
+    width: 80px;
+    margin-right: 10px;
+    background: #1e8217;
+    padding: 5px 15px;
+    font-size: 12px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-task {
+    outline: none;
+    width: 80px;
+    background: #bf2121;
+    padding: 5px 15px;
+    font-size: 12px;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
